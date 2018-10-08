@@ -17,9 +17,9 @@ void swap32()
     scanf("%i", &varToSwap);
 
 	varToSwap = ((varToSwap & 0x000000FF) << 24) |
-				((varToSwap & 0x0000FF00) <<  8) |
-				((varToSwap & 0x00FF0000) >>  8) |
-				((varToSwap & 0xFF000000) >> 24);
+  		    ((varToSwap & 0x0000FF00) <<  8) |
+		    ((varToSwap & 0x00FF0000) >>  8) |
+		    ((varToSwap & 0xFF000000) >> 24);
 }
 
 void swap64()
@@ -30,13 +30,13 @@ void swap64()
     scanf("%i", &varToSwap);
 
     varToSwap = ((varToSwap & 0x00000000000000FFULL) << 56) |
-				((varToSwap & 0x000000000000FF00ULL) << 40) |
-				((varToSwap & 0x0000000000FF0000ULL) << 24) |
-				((varToSwap & 0x00000000FF000000ULL) <<  8) |
-				((varToSwap & 0x000000FF00000000ULL) >>  8) |
-				((varToSwap & 0x0000FF0000000000ULL) >> 24) |
-				((varToSwap & 0x00FF000000000000ULL) >> 40) |
-				((varToSwap & 0xFF00000000000000ULL) >> 56);
+		((varToSwap & 0x000000000000FF00ULL) << 40) |
+		((varToSwap & 0x0000000000FF0000ULL) << 24) |
+		((varToSwap & 0x00000000FF000000ULL) <<  8) |
+		((varToSwap & 0x000000FF00000000ULL) >>  8) |
+		((varToSwap & 0x0000FF0000000000ULL) >> 24) |
+		((varToSwap & 0x00FF000000000000ULL) >> 40) |
+		((varToSwap & 0xFF00000000000000ULL) >> 56);
 }
 
 
